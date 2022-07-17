@@ -1,7 +1,6 @@
 import java.util.Random;
 
 public class HomeWork2 {
-
     public static void main(String[] args) {
         randomPairsInArray();
         numbersTenToNull();
@@ -13,10 +12,9 @@ public class HomeWork2 {
         evenIndexArray();
     }
 
-/*
-    1. Створити, а потім заповнити масив випадковими парними числами.
-*/
-
+    /*
+        1. Створити, а потім заповнити масив випадковими парними числами.
+    */
     public static void randomPairsInArray() {
         Random random = new Random();
         int[] array = new int[20];
@@ -59,10 +57,9 @@ public class HomeWork2 {
         }
     }
 
-/*
-  4. Знайти найбільше число в масиві
-*/
-
+    /*
+      4. Знайти найбільше число в масиві
+    */
     public static void maxNumberInArray() {
         int[] array = {112, 2, 3, 4, 5, 17, 6, 7, 8, 9, 10, 11, 12};
         int max = array[0];
@@ -71,7 +68,6 @@ public class HomeWork2 {
         }
         System.out.print("\nTask 4. Найбільше число в массиві: " + max);
     }
-
 
     /*
         5. Знайти найменше число в масиві
@@ -85,10 +81,9 @@ public class HomeWork2 {
         System.out.print("\nTask 5. Найменше число в массиві: " + min);
     }
 
-/*
-    6. Знайти середнє значення суми всіх чисел в масиві
- */
-
+    /*
+        6. Знайти середнє значення суми всіх чисел в масиві
+     */
     public static void avarageOfArray() {
         int array[] = {5, 8, 12, 18, 54, 84, 35, 17, 37, 2};
         double sum = 0;
@@ -102,28 +97,27 @@ public class HomeWork2 {
        7. Знайти найбільше парне число в масиві
     */
     public static void highestEvenNumberInArray() {
-        int array[] = {86, 8, 12, 18, 54, 84, 91, 35, 17, 37};
-        int arrayEven[] = new int[10];
-        int max = 0;
-        System.out.println("\nTask 7. Найбільше парне число в массиві: ");
-
-
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                arrayEven[i] = array[i];
+        int array[] = {85, 8, 12, 18, 54, 84, 91, 35, 17, 37};
+        boolean s = false;
+        int max = Integer.MIN_VALUE;
+        for (int i : array) {
+            if (!s && i % 2 == 0) {
+                max = i;
+                s = true;
             }
+            if (i % 2 == 0 && i > max)
+                max = i;
         }
-        for (int i = 0; i < array.length; i++) {
-            max = Math.max(arrayEven[i], max);
+        if (!s) {
+            System.out.println("Массив не має парних чисел");
+            System.exit(0);
         }
-        System.out.print(max + " ");
-
+        System.out.print("\nTask 7. Найбільше парне число в массиві:  " + max);
     }
 
-/*
-   8. Вивести значення в масиві в яких є парні індекси
-*/
-
+    /*
+       8. Вивести значення в масиві в яких є парні індекси
+    */
     public static void evenIndexArray() {
         int array[] = {5, 8, 12, 18, 54, 84, 91, 35, 17, 37};
         System.out.println("\nTask 8. Значення парних індексів массива: ");
@@ -131,6 +125,5 @@ public class HomeWork2 {
         for (int i = 0; i < array.length; i += 2) {
             System.out.print(array[i] + " ");
         }
-
     }
 }

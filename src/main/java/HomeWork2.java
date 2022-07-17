@@ -101,12 +101,9 @@ public class HomeWork2 {
         boolean s = false;
         int max = Integer.MIN_VALUE;
         for (int i : array) {
-            if (!s && i % 2 == 0) {
-                max = i;
-                s = true;
-            }
             if (i % 2 == 0 && i > max)
                 max = i;
+            s = true;
         }
         if (!s) {
             System.out.println("\nTask 7. Массив не має парних чисел");

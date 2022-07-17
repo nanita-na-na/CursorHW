@@ -1,4 +1,7 @@
-.idea/*
+/out/*
+/.idea/*
 *.iml
-target/*
+/target/*
 target
+pom.xml
+

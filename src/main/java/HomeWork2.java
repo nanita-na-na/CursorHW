@@ -3,14 +3,14 @@ import java.util.Random;
 public class HomeWork2 {
 
     public static void main(String[] args) {
-        randomPairsInArray();
-        numbersTenToNull();
-        randomCharArray();
-        maxNumberInArray();
-        minNumberInArray();
-        avarageOfArray();
+//        randomPairsInArray();
+//        numbersTenToNull();
+//        randomCharArray();
+//        maxNumberInArray();
+//        minNumberInArray();
+//        avarageOfArray();
         highestEvenNumberInArray();
-        evenIndexArray();
+     //   evenIndexArray();
     }
 
 /*
@@ -64,7 +64,7 @@ public class HomeWork2 {
 */
 
     public static void maxNumberInArray() {
-        int[] array = {1, 2, 3, 4, 5, 17, 6, 7, 8, 9, 10, 11, 12};
+        int[] array = {112, 2, 3, 4, 5, 17, 6, 7, 8, 9, 10, 11, 12};
         int max = array[0];
         for (int i = 1; i < array.length; i++) {
             max = Math.max(max, array[i]);
@@ -79,7 +79,7 @@ public class HomeWork2 {
     public static void minNumberInArray() {
         int[] array = {1, 2, 3, 4, 5, 17, 6, 7, 8, 9, 10, 11, 12};
         int min = array[0];
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             min = Math.min(min, array[i]);
         }
         System.out.print("\nTask 5. Найменше число в массиві: " + min);
@@ -102,7 +102,7 @@ public class HomeWork2 {
        7. Знайти найбільше парне число в масиві
     */
     public static void highestEvenNumberInArray() {
-        int array[] = {5, 8, 12, 18, 54, 84, 91, 35, 17, 37};
+        int array[] = {86, 8, 12, 18, 54, 84, 91, 35, 17, 37};
         int arrayEven[] = new int[10];
         int max = array[0];
         System.out.println("\nTask 7. Найбільше парне число в массиві: ");
@@ -113,7 +113,7 @@ public class HomeWork2 {
                 arrayEven[i] = array[i];
             }
         }
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             max = Math.max(max, arrayEven[i]);
         }
         System.out.print(max + " ");

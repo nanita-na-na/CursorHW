@@ -3,14 +3,14 @@ import java.util.Random;
 public class HomeWork2 {
 
     public static void main(String[] args) {
-//        randomPairsInArray();
-//        numbersTenToNull();
-//        randomCharArray();
-//        maxNumberInArray();
-//        minNumberInArray();
-//        avarageOfArray();
+        randomPairsInArray();
+        numbersTenToNull();
+        randomCharArray();
+        maxNumberInArray();
+        minNumberInArray();
+        avarageOfArray();
         highestEvenNumberInArray();
-     //   evenIndexArray();
+        evenIndexArray();
     }
 
 /*
@@ -104,7 +104,7 @@ public class HomeWork2 {
     public static void highestEvenNumberInArray() {
         int array[] = {86, 8, 12, 18, 54, 84, 91, 35, 17, 37};
         int arrayEven[] = new int[10];
-        int max = array[0];
+        int max = 0;
         System.out.println("\nTask 7. Найбільше парне число в массиві: ");
 
 
@@ -114,9 +114,10 @@ public class HomeWork2 {
             }
         }
         for (int i = 0; i < array.length; i++) {
-            max = Math.max(max, arrayEven[i]);
+            max = Math.max(arrayEven[i], max);
         }
         System.out.print(max + " ");
+
     }
 
 /*

@@ -97,15 +97,16 @@ public class HomeWork2 {
        7. Знайти найбільше парне число в масиві
     */
     public static void highestEvenNumberInArray() {
-        int array[] = {85, 8, 12, 18, 54, 84, 91, 35, 17, 37};
-        boolean s = false;
+        int[] array = {85, 7, 11, 17, 53, 83, 91, 35, 17, 37};
+        boolean isEvenPresent = false;
         int max = Integer.MIN_VALUE;
-        for (int i : array) {
-            if (i % 2 == 0 && i > max)
-                max = i;
-            s = true;
+        for (int i = 0; array.length > i; i++) {
+            if (array[i] > max && array[i] % 2 == 0) {
+                max = array[i];
+                isEvenPresent = true;
+            }
         }
-        if (!s) {
+        if (!isEvenPresent) {
             System.out.println("\nTask 7. Массив не має парних чисел");
             System.exit(0);
         }

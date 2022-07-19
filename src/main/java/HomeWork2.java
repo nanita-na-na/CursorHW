@@ -108,10 +108,8 @@ public class HomeWork2 {
         }
         if (!isEvenPresent) {
             System.out.print("\nTask 7. Массив не має парних чисел");
-
         } else {
             System.out.print("\nTask 7. Найбільше парне число в массиві:  " + max);
-
         }
     }
 

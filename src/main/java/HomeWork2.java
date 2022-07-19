@@ -107,10 +107,12 @@ public class HomeWork2 {
             }
         }
         if (!isEvenPresent) {
-            System.out.println("\nTask 7. Массив не має парних чисел");
-            System.exit(0);
+            System.out.print("\nTask 7. Массив не має парних чисел");
+
+        } else {
+            System.out.print("\nTask 7. Найбільше парне число в массиві:  " + max);
+
         }
-        System.out.print("\nTask 7. Найбільше парне число в массиві:  " + max);
     }
 
     /*

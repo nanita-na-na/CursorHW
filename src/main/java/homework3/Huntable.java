@@ -1,10 +1,10 @@
 package homework3;
 
-public interface Huntable { // способный охотиться
-    public void hunt();
+public interface Huntable {
+    void hunt();
 
-    public void attacks();
+    void attacks();
 
-    public void bites();
+    void bites();
 
 }

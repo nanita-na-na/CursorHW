@@ -54,11 +54,13 @@ public class Cat extends Animal implements Huntable {
             System.out.println(getName() + "-" + getId() + " rrrr! grrrr! mrrrr!");
         }
     }
+
     public static class Fox extends Cat {
 
         public Fox(String name, int age, String color, int id) {
             super(name, age, color, id);
         }
+
         @Override
         public void voice() {
             System.out.println(getName() + "-" + getId() + " fyr! fyr! fyr!");

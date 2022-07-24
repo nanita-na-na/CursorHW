@@ -8,10 +8,10 @@ public class Zoo {
         Cat tiger1 = new Cat.Tiger("Simba", 3, "striped", 02);
         tiger1.callAllMethods();
 
-        Cat fox1 = new Cat.Fox("Lisa", 1,"red", 03);
+        Cat fox1 = new Cat.Fox("Lisa", 1, "red", 03);
         fox1.callAllMethods();
 
-        Dog dog1 = new Dog("Sharik", 4,"gray", 04);
+        Dog dog1 = new Dog("Sharik", 4, "gray", 04);
         dog1.callAllMethods();
 
         Dog wolf1 = new Dog.Wolf("Wolf", 4, "gray", 05);

@@ -1,6 +1,6 @@
 package homework3;
 
-public class Cow extends Animal implements NotHuntable{
+public class Cow extends Animal implements NotHuntable {
     public Cow(String name, int age, String color, int id) {
         super(name, age, color, id);
     }
@@ -17,14 +17,15 @@ public class Cow extends Animal implements NotHuntable{
 
     @Override
     void voice() {
-        System.out.println(getName()+ "-" + getId()+ " Muu! Muu!");
+        System.out.println(getName() + "-" + getId() + " Muu! Muu!");
     }
 
     @Override
     public void grazing() {
-        System.out.println(getName()+ "-" + getId()+ " I`m grazing");
+        System.out.println(getName() + "-" + getId() + " I`m grazing");
     }
-    public void callAllMethods(){
+
+    public void callAllMethods() {
         grazing();
         voice();
         eat();

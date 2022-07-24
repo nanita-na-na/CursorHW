@@ -46,8 +46,6 @@ public class Dog extends Animal implements Huntable {
     }
 
     public static class Wolf extends Dog {
-
-
         public Wolf(String name, int age, String color, int id) {
             super(name, age, color, id);
         }

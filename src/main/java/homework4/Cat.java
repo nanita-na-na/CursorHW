@@ -1,4 +1,4 @@
-package homework3;
+package homework4;
 
 public class Cat extends Animal implements Huntable {
     public Cat(String name, int age, String color, int id) {

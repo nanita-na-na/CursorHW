@@ -1,6 +1,8 @@
 package homework6;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class PriorityQueueTasks {
     public static void main(String[] args) {
@@ -141,8 +143,12 @@ public class PriorityQueueTasks {
         colors.add("Green");
         colors.add("Black");
 
-        List<String> array = new ArrayList<>(colors);
-        System.out.println("Task 10: " + colors);
+        String[] result = new String[colors.size()];
+        colors.toArray(result);
+        System.out.println("Task 10: ");
+        for (int i = 0; i < result.length; i++) {
+            System.out.println(result[i]);
+        }
     }
 
     public static void task11() {

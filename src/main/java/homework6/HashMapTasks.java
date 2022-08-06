@@ -88,9 +88,8 @@ public class HashMapTasks {
         hashMap.put(2, "Red");
         hashMap.put(3, "Pink");
 
-        Map<Integer, String> result = new HashMap<>();
-        result = (Map<Integer, String>) ((HashMap<Integer, String>) hashMap).clone();
-        System.out.println("Task 6: " + result);
+        Map<Integer, String> result = new HashMap<>(hashMap);
+        System.out.println("\nTask 6: " + result);
     }
 
     public static void task7() {

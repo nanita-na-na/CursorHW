@@ -73,8 +73,12 @@ public class LinkedListTasks {
         list.add("White");
         list.add("Black");
         list.add("Green");
-        Collections.reverse(list);
-        System.out.println("Task 4: " + list);
+
+        String result= "";
+        for (String lists:list) {
+            result = lists + "\r\n" + result;
+        }
+        System.out.println("Task 4: " + result);
     }
 
     public static void task5() {

@@ -1,5 +1,6 @@
 package homework10;
 
+
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -15,8 +16,6 @@ public class Main {
         System.out.println("Task 5: ");
         task5();
         System.out.println("Task 6: " + task6());
-
-
     }
 
     private static int task1() {
@@ -42,8 +41,8 @@ public class Main {
 
     public static void task3() {
 
-        List<String> stringList = List.of("а", "й", "правда", "крилатим", "грунту", "не", "треба", "нема", "землі", "то", "буде", "небо");
-        stringList.stream()
+        List<String> strings = List.of("а", "й", "правда", "крилатим", "грунту", "не", "треба", "нема", "землі", "то", "буде", "небо");
+        strings.stream()
                 .filter(s -> s.length() > 5)
                 .forEach(System.out::println);
     }
@@ -62,7 +61,6 @@ public class Main {
         stringList.stream()
                 .sorted()
                 .forEach(System.out::println);
-
     }
 
     public static long task6() {
